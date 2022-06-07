@@ -21,6 +21,7 @@ public class NewCustomer extends JFrame {
         JComboBox comboBox;
         JRadioButton r1,r2;
         Choice c1;
+		ButtonGroup bg;
 	/**
 	 * Launch the application.
 	 */
@@ -86,7 +87,8 @@ public class NewCustomer extends JFrame {
 		JLabel lblGender = new JLabel("Gender :");
 		lblGender.setBounds(35, 191, 200, 14);
 		contentPane.add(lblGender);
-                
+		bg = new ButtonGroup();
+
                 r1 = new JRadioButton("Male");
                 r1.setFont(new Font("Raleway", Font.BOLD, 14));
                 r1.setBackground(Color.WHITE);
@@ -97,6 +99,9 @@ public class NewCustomer extends JFrame {
                 r2.setFont(new Font("Raleway", Font.BOLD, 14));
                 r2.setBackground(Color.WHITE);
                 r2.setBounds(350, 191, 100, 12);
+
+				bg.add(r1);
+				bg.add(r2);
 		add(r2);
                 
 		JLabel lblCountry = new JLabel("Country :");
@@ -125,10 +130,7 @@ public class NewCustomer extends JFrame {
 		JLabel lblDeposite = new JLabel("Deposit :");
 		lblDeposite.setBounds(35, 359, 200, 14);
 		contentPane.add(lblDeposite);
-		
-		
-		
-		
+
 		
 		t3 = new JTextField();
 		t3.setBounds(271, 231, 150, 20);
