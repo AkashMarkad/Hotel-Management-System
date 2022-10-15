@@ -114,26 +114,20 @@ public class CheckOut extends JFrame{
                 t1.setBounds(130, 132, 150, 20);
 		contentPane.add(t1);
                 
-                
-                
-                
-                
-		
+
                 
 		JButton btnCheckOut = new JButton("Check Out");
 		btnCheckOut.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-                                String id = c1.getSelectedItem();
-                                String s1 = t1.getText();
+				String id = c1.getSelectedItem();
+    		    String s1 = t1.getText();
 				String deleteSQL = "Delete from customer where number = "+id;
-                                String q2 = "update room set availability = 'Available' where room_number = "+s1;
-                                
-                                
+				String q2 = "update room set availability = 'Available' where room_number = "+s1;
+
 				conn c = new conn();
 
 	    		try{
-	    			
-	    			
+
 	    			c.s.executeUpdate(deleteSQL);
 	    			c.s.executeUpdate(q2);
 	    			JOptionPane.showMessageDialog(null, "Check Out Successful");

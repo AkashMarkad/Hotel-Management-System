@@ -134,7 +134,7 @@ public class UpdateCheck extends JFrame {
                                 conn c = new conn();
                                 
                                 String s1 = c1.getSelectedItem();
-				String s2 = txt_ID.getText(); //room_number;    
+								String s2 = txt_ID.getText(); //room_number;
                                 String s3 = txt_Status.getText(); //name    
                                 String s4 = txt_Date.getText(); //status;    
                                 String s5 = txt_Time.getText(); //deposit    

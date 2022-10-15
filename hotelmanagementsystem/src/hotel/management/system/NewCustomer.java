@@ -153,7 +153,9 @@ public class NewCustomer extends JFrame {
 			public void actionPerformed(ActionEvent e) {
                             conn c = new conn();
                             String radio = null;
-                            
+
+
+
                             if(r1.isSelected()){ 
                                 radio = "Male";
                             }
@@ -161,16 +163,17 @@ public class NewCustomer extends JFrame {
                                 radio = "Female";
                             }
                             
-                            String s6 = c1.getSelectedItem();
+//                            String s6 = c1.getSelectedItem();
                           
                             try{
 	    			
                                 String s1 = (String)comboBox.getSelectedItem(); 
-	    			String s2 =  t1.getText();
-	    			String s3 =  t2.getText();
+	    						String s2 =  t1.getText();
+			    				String s3 =  t2.getText();
                                 String s4 =  radio;
-	    			String s5 =  t3.getText();
-	    			String s7 =  t5.getText();
+		    					String s5 =  t3.getText();
+	    						String s7 =  t5.getText();
+								String s6 = c1.getSelectedItem();
                                 String s8 =  t6.getText();
                                 
                                 String q1 = "insert into customer values('"+s1+"','"+s2+"','"+s3+"','"+s4+"','"+s5+"','"+s6+"','"+s7+"','"+s8+"')";

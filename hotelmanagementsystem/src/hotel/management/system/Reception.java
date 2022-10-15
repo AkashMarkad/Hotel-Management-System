@@ -11,8 +11,6 @@ public class Reception extends JFrame {
 
 	private JPanel contentPane;
 
-
-	
 	public Reception(){
 		
 		setBounds(530, 200, 850, 570);
